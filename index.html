@@ -6,40 +6,46 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/index.css">
-  <script src="js/index.js"></script>
+  <!-- <script src="js/index.js"></script> -->
   <title>Menu -psm- con flex</title>
 </head>
 <body>
   <div class="contenedorPrincipal">
-    <nav class="nav-MenuNivel1">
-      <ul class="ul-MenuNivel1 flexContenedor-ul-MenuNivel1">
-        <li class="li-MenuNivel1">
-          <a href="#" class="a-opcion01-menuNivel1">Datos Personales</a>
-        </li>
-        <li class="li-MenuNivel1Preparacion">
-          <a href="#" class="a-opcion01-menuNivel1">Preparación</a>
-          <ul class="ul-MenuNivel2Preparacion">  <!-- flexContenedor-ul-MenuNivel2-Preparacion -->
-            <li class="li-MenuNivel2Preparacion">
-              <a href="#" class="a-opcion01-menuNivel2">Licenciado en Informatica (Titulo)</a>
-            </li>
-            <li class="li-MenuNivel2Preparacion">
-                <a href="#" class="a-opcion01-menuNivel2">Licenciado en Informatica (Cedula Profesional)</a>
+    <nav class="nav-menu">
+      <ul class="ul-menu__Nivel1">
+        <li class="li-menu--item__Nivel1--datos-generales">
+          <a href="#" class="a-menu--link__Nivel1">Datos Generales</a>
+        </li> <!-- li-menu--item__Nivel1--datos-generales -->
+        <li class="li-menu--item__Nivel1--preparacion">
+            <a href="#" class="a-menu--link__Nivel1">Preparación</a>
+            <!-- submenu para el item preparación -->
+            <!-- la clase "submenu" se aplicara a todos los menus a partir del segundo nim=vel -->
+            <ul class="ul-menu__Nivel2 submenu">
+              <li class="li-menu--item__Nivel2">
+                <a href="#" class="a-menu--link__Nivel2">Lic. en Informatica (Titulo)</a>
               </li>
-              <li class="li-MenuNivel2Preparacion">
-                  <a href="#" class="a-opcion01-menuNivel2">Cosdac 1</a>
+              <li class="li-menu--item__Nivel2">
+                <a href="#" class="a-menu--link__Nivel2">Lic. en Informatica (Cedula Profesional)</a>
+              </li>
+              <li class="li-menu--item__Nivel2">
+                <a href="#" class="a-menu--link__Nivel2">Cosdac 1</a>
+              </li>
+              <li class="li-menu--item__Nivel2">
+                  <a href="#" class="a-menu--link__Nivel2">Cosdac 2</a>
                 </li>
-                <li class="li-MenuNivel2Preparacion">
-                    <a href="#" class="a-opcion01-menuNivel2">Cosdac 2</a>
-          </ul> <!-- ul-MenuNivel2Preparacion -->
-        </li> <!-- liMenuNivel1 - Preparacion -->
-        <li class="li-MenuNivel1">
-          <a href="#" class="a-opcion01-menuNivel1">Trayectoria</a>
-        </li>
-        <li class="li-MenuNivel1">
-          <a href="#" class="a-opcion01-menuNivel1">Contacto</a>
-        </li>
-      </ul>  <!-- flexContenedor-ulMenuNivel1 -->
-    </nav>
+                <li class="li-menu--item__Nivel2">
+                    <a href="#" class="a-menu--link__Nivel2">Cosdac 3</a>
+                  </li>
+            </ul> <!-- ul-menu__Nivel2 submenu -->
+        </li> <!-- li-menu--item__Nivel1--preparacion -->
+        <li class="li-menu--item__Nivel1--trayectoria">
+            <a href="#" class="a-menu--link__Nivel1">Trayectoria</a>
+        </li> <!-- li-menu--item__Nivel1--trayectoria -->
+        <li class="li-menu--item__Nivel1--contacto">
+            <a href="#" class="a-menu--link__Nivel1">Contacto</a>
+        </li> <!-- li-menu--item__Nivel1--contacto -->
+      </ul> <!-- ul-menu__Nivel1 -->
+    </nav> <!-- nav-menu -->
   </div>   <!--id="contenedorPrincipal: engloba todo-->
 </body>
 </html>

@@ -1,28 +1,52 @@
-/* contenedor flex menu nivel 1 */
+/* selector "texto" dentro de un atributo (en cualquier parte) */
+[class*="ul-menu"]{
+  /* quitar el padding que tiene por defecto. */
+  padding-left: 0;
+  /* quitar las viñetas */
+  list-style-type: none;
+  background-color: hsla(200, 50%, 20%, 0.9);
+  display: flex;
+}
+
+/* selector "texto" dentro de un atributo (en cualquier parte) */
+[class*="a-menu--link"]{
+  /* quitar el subrayado de los -a- */
+  text-decoration: none;
+  color: hsla(200, 50%, 100%, 1);
+  /* se aplica display: block para asignarle padding  */
+  display: block;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.submenu{
+  /* se le asigno display: flex mediante el selector [class*="ul-menu"] */
+  flex-direction: column;
+  position: absolute; /* hace que se salga del flujo y que sobreiluminado solo este submenu */
+}
+
+
+
+
+
+
+
+/* 
 .flexContenedor-ul-MenuNivel1{
   display: flex;
-  /* height: 2rem; */
-  /* justify-content: space-evenly; */ /* alinea los item en el eje principal distribuyendo equitativamente el espacio disponible */
-  /* align-items: center; */ /* alinear los items al centro del size-cross */
   background-color: hsla(200, 50%, 20%, 0.9);
 }
 
-/* menu nivel 1 */
-.nav-MenuNivel1{
-  /* background-color: hsla(200, 50%, 20%, 0.9); */
-}
-
-/* selector para los menus ul "contiene en el nombre de la clase" */
 [class*="ul-Menu"]{
-  padding-left: 0; /* para resetear el padding que tienen por defecto los ul */
+  padding-left: 0; 
 }
 
-/* selector para los menus li "contiene en el nombre de la clase" */
 [class*="li-Menu"]{
-  flex-grow: 1; /* para que crezcan los items */
-  list-style-type: none; /* para quitar las viñetas */
-  /* display: inline-block; */ /* por defecto los li son de bloque */
-  position: relative; /* para hacer position: relative a todos los item li-Menu... */
+  flex-grow: 1; 
+  list-style-type: none;
+  position: relative;
 }
 
 [class*="li-Menu"]:hover{
@@ -33,11 +57,10 @@
   display: block;
 }
 
-/* selector para las opciones a de los menus "contiene en el nombre de la clase" */
 [class*="a-opcion"]{
   color: hsla(200, 50%, 100%, 1);
-  text-decoration: none; /* para quitar el subrayado */
-  display: block; /* para darle padding */
+  text-decoration: none;
+  display: block; 
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   padding-left: 2em;
@@ -45,14 +68,8 @@
   font-weight: bold;
 }
 
-.li-MenuNivel1Preparacion{
-  /* position: relative; */
-}
-
-/* .ul-MenuNivel2Preparacion */
 [class*="ul-MenuNivel2"]{
-  /* display: block; */
-  position: absolute; /* este codigo ocasiona que que este elemento salga del flujo  dejando de pertenecer al padre */
+  position: absolute; 
   background-color: hsla(200, 50%, 20%, 0.8);
   top: 100%;
   display: none;
@@ -61,4 +78,4 @@
 
 [class*="li-MenuNivel2"]{
   display: block;
-}
+} */
